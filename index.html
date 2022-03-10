@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<h2>Objeto XHMLHttpRequest</h2>
+<ol id="xhr"></ol>
+
+<h2>API Fetch</h2>
+<ol id="fetch"></ol>
+
+<h2>API Fetch + Async-Await</h2>
+<ol id="fetch-async"></ol>
+
+<h2>Axios</h2>
+<ol id="axios"></ol>
+
+<h2>Axios + Async-Await</h2>
+<ol id="axios-async"></ol>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="ajax.js"></script>
+
+<script>
+
+// Callback: Para repetir una función cada vez que queramos.
+
+/* const fB = () => console.log("Función B ejecutada");
+
+const fError = () => console.log("Error");
+
+const fA = function (callback, callbackError) {
+	const n = ~~(Math.random() * 5);
+	if (n > 2) callback();
+	else callbackError();
+}
+
+fA(fB, fError); */
+
+/* function cuadradoCallback(value, callback) {
+	setTimeout(() => {
+		callback(value, value * value);
+	}, 0 | Math.random() * 1000);
+}
+
+cuadradoCallback(0, (value, result) => {
+	console.log("Inicia Callback");
+	console.log(`Callback: ${value}, ${result}`);
+	cuadradoCallback(1, (value, result) => {
+		console.log(`Callback: ${value}, ${result}`);
+		cuadradoCallback(2, (value, result) => {
+			console.log(`Callback: ${value}, ${result}`);
+		});
+	});
+}); */
+
+/* let lenguajes = ["ruby", "php", "js", "python"];
+
+lenguajes.forEach((lenguaje, indice, arreglo) => {
+	console.log(lenguaje);
+}) */
+/* 
+const div = document.createElement("div");
+div.textContent = "Elemento 1";
+
+const div2 = div.cloneNode();   // Ahora SÍ estamos clonando
+div2.textContent = "Elemento 2";
+
+div.textContent;  // 'Elemento 1' */
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
