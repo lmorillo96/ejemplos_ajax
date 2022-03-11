@@ -158,6 +158,8 @@
         console.log(err.response)
         let message = err.response.statusText || "Ocurrió un error";
         $axiosAsync.innerHTML = `Error ${err.response.status}: ${message}`;
+
+        
      } finally {
         console.log("Independientemente el resultado, esto ejecuta")
      }
